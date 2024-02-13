@@ -1,0 +1,56 @@
+{
+    "name": "Vaisseau",
+    "maps": [
+        {
+            "name": "Joueur",
+            "id": "bc6d3654-2671-4d9f-ac6a-fc92d94690f4",
+            "actions": [
+                {
+                    "name": "Bouger",
+                    "type": "Value",
+                    "id": "abc9b857-b246-4cf6-a5b4-9af7e864cddb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "f14c3532-7b07-4bac-be6c-81f05cca1950",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bouger",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Left",
+                    "id": "19b49cf9-a8ae-4c5d-8db2-72afd9b07349",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bouger",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "de9ac73e-c980-42a8-a81b-4bb47ec18d16",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bouger",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

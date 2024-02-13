@@ -1,0 +1,85 @@
+{
+    "name": "ControleMusique",
+    "maps": [
+        {
+            "name": "PourMusique",
+            "id": "fe9ed065-50a3-4b94-8cc0-12b25a71c761",
+            "actions": [
+                {
+                    "name": "FermeMusique",
+                    "type": "Button",
+                    "id": "4c2330d1-82b0-4ad7-bc72-3af029794885",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FaireDisparaitre",
+                    "type": "Button",
+                    "id": "04964492-0829-48eb-8a5a-0f771fddc86f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FaireApparaitre",
+                    "type": "Button",
+                    "id": "a7cd7258-ec10-4792-986b-a8a1469dbf44",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "91fd390a-d05e-4350-850b-4f38750f8b4f",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FermeMusique",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a367239-1324-4152-81a4-5ef9db83ac87",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FaireDisparaitre",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7efdbe6a-1f49-4116-9fd6-b2aad734c79d",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FaireDisparaitre",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b31a924b-a9a3-4489-a04a-08cea4fcaa8b",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FaireApparaitre",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
