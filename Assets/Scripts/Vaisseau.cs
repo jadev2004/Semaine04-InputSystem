@@ -15,4 +15,9 @@ public class Vaisseau : MonoBehaviour
     {
         
     }
+
+    public void RecevoirInfo(){
+
+        Debug.Log("ok");
+    }
 }
