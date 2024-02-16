@@ -10,26 +10,32 @@ public class Vaisseau : MonoBehaviour
 private float _valeurX;
 private float _valeurY;
 private Vector2 _mouvementHorizontal;
+private Rigidbody _rb;
 
 
     void Start()
     {
-        
+        _rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        Bouge();
+    void Update(){
+       Bouge();
+
     }
 
-    public void RecevoirInfo(InputAction.CallbackContext context){
 
-        Debug.Log(context.ReadValue<Vector2>());
+    public void GaucheDroite(InputAction.CallbackContext context){
+
+       // Debug.Log(context.ReadValue<Vector2>());
+       _mouvementHorizontal= context.ReadValue<Vector2>();
+       _valeurX = _mouvementHorizontal.x;
+       _valeurY = _mouvementHorizontal.y;
     }
 
     void Bouge(){
-
+ Vector2 _mouvement = new Vector2 (_valeurX,_valeurY);
+        _rb.AddForce(_mouvement*40,ForceMode.Force);
 
     }
 }
