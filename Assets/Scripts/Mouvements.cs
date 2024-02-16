@@ -26,7 +26,7 @@ void Bouger(){
 float _valeurX = _valeurRecue.x;
 float _valeurY = _valeurRecue.y;
 
-_rb.velocity = new Vector2(_valeurX,0,_valeurY);
+_rb.velocity = new Vector3(_valeurX,0,_valeurY);
 
 //_rb.velocity = new Vector2(-1,0);
 }
