@@ -38,4 +38,5 @@ private Rigidbody _rb;
         _rb.AddForce(_mouvement*40,ForceMode.Force);
 
     }
+
 }

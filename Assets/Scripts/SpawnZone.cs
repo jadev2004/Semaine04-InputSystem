@@ -14,7 +14,7 @@ public class SpawnZone : MonoBehaviour
 
     void Start()
     {
-       InvokeRepeating("AddGameObject", 0f, repeatTime); 
+       InvokeRepeating("AddGameObject", 0.1f, repeatTime); 
     }
 
 
@@ -25,8 +25,8 @@ GameObject instantiated = Instantiate(boitePrefab);
 instantiated.transform.position = new Vector3(
 
 Random.Range(transform.position.x - zoneSize.x / 2, transform.position.x + zoneSize.x / 2),
-Random.Range(transform.position.y - zoneSize.y / 2, transform.position.x + zoneSize.y / 2),
-Random.Range(transform.position.z - zoneSize.z / 2, transform.position.x + zoneSize.z / 2)
+Random.Range(transform.position.y - zoneSize.y / 2, transform.position.y + zoneSize.y / 2),
+Random.Range(transform.position.z - zoneSize.z / 2, transform.position.z + zoneSize.z / 2)
 
 );
 

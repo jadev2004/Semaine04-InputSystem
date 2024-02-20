@@ -38,4 +38,21 @@ public void OnMove(InputValue value){
   _valeurRecue = value.Get<Vector2>();  
 }
 
+
+
+
+
+
+private void OnCollisionEnter(Collision other){
+
+    if(other.gameObject.CompareTag("CubeD")){
+
+Destroy(other.gameObject);
+}
+    
+}
+
+
+
+
 }
