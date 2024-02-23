@@ -8,6 +8,7 @@ TagManager:
   - CubeD
   - Sol
   - DPlayer
+  - PointPortail
   layers:
   - Default
   - TransparentFX

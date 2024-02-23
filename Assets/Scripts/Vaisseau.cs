@@ -33,7 +33,7 @@ private Rigidbody _rb;
        _valeurY = _mouvementHorizontal.y;
     }
 
-    void Bouge(){
+   public void Bouge(){
  Vector2 _mouvement = new Vector2 (_valeurX,_valeurY);
         _rb.AddForce(_mouvement*40,ForceMode.Force);
 
